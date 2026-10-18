@@ -1,50 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style .css">
-    <title>Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/style .css">
+  <link rel="shortcut icon" href="static\images\web.png" type="image/x-icon">
+  <title>Website</title>
 </head>
+
 <body>
-    <header>
-   
-    <nav class="navbar">
-        <div class="logo">
-            <img  class="logo-img"  src="static\images\web.png" alt="logo">
-            <h2>WILLIAM's Website</h2>
+  <header id="site-header"></header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>William.</span></h1>
+        <h2>Aspiring Software Developer</h2>
+        <p class="hero-description">
+          I'm learning to build modern, responsive websites
+          and practical digital solutions. I enjoy solving
+          problems, writing code, and turning ideas into reality.
+        </p>
 
+        <div class="hero-buttons">
+          <a href="/projects .html" class="btn -cta btn-primary">Explore My Work</a>
+          <a href="/about.html" class="btn-cta btn-outline ">Get In Touch</a>
         </div>
-        <ul class="navlinks">
-            <li><a href="#">Home</a></li>     
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Let's Talk</a></li>
 
-        </ul>
-     </nav>
-   </header>
-   <main>
-     <section class="hero">
-        <div class="profile">
-            <p></p>
-        </div>
-     </section>
-   </main>
-   <footer>
-    <nav class="navbar">
-        <div class="logo">
-            <h2>PlatformWebsite</h2>
+        <p class="availability">
+          <span class="status-dot"></span>
+          Open to learning and new opportunities
+        </p>
+      </div>
 
+      <div class="hero-card">
+        <div class="code-window">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"William"</span>,
+  role: <span class="code-green">"Software Engineer"</span>,
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>
+  ],
+  learning: <span class="code-green">"Every day"</span>
+};
+
+<span class="code-blue">console</span>.log(developer);</code></pre>
         </div>
-        <ul class="navlinks">
-            <li><a href="#">Home</a></li>     
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Photos</a></li>
-        </ul>
-     </nav>
-   </footer>
-    
+        <div class="hero-decoration"></div>
+      </div>
+    </section>
+
+  
+
+
+  <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+        <div>
+          <h3>My journey into software development</h3>
+          <p>
+            I'm an aspiring software engineer passionate about
+            technology and creating useful digital experiences.
+            I'm building my skills one project at a time and
+            learning how to write clean, accessible code.
+          </p>
+          <p>
+            My current focus is web development using HTML, CSS,
+            and JavaScript. My goal is to grow as a developer,
+            collaborate with others, and create software that
+            solves real-world problems.
+          </p>
+         
+        </div>
+      </div>
+    </section>
+
+  <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My Technical <span>Skills</span></h2>
+        <p class="section-description">
+          Technologies I'm learning and using in my projects.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon html-icon">5</div>
+          <h3>HTML5</h3>
+          <p>Building structured and accessible web pages.</p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon css-icon">3</div>
+          <h3>CSS3</h3>
+          <p>Creating layouts, colors, animations, and responsive designs.</p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Learning interactive features and programming fundamentals.</p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon git-icon">&lt;/&gt;</div>
+          <h3>Git & GitHub</h3>
+          <p>Learning version control and sharing code.</p>
+        </article>
+      </div>
+  </section>
+  <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'M BUILDING</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p class="section-description">
+          A few ideas I can develop as I grow my skills.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual visual-one">
+            <span class="project-symbol">01</span>
+            <span class="visual-label">WEB DEVELOPMENT</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">REAL ESTATE PROJECT</p>
+            <h3>LandlordBora</h3>
+            <img class="project-img" src="static\images\real.jpg" alt="">
+            <p>
+              Real estate system for landlords to create, update, delete tenants. Also tracks payments and has chat
+              space where tenant can chat the landord in any emergency that can occur
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-two">
+            <span class="project-symbol">02</span>
+            <span class="visual-label">PRODUCTIVITY</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">PROJECT IDEA</p>
+            <h3>Event Management System</h3>
+            <img src="static\images\event.jpg" alt="" class="project-img">
+            <p>
+              A simple event Management system for adding, completing,
+              and organizing everyday activities.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-three">
+            <span class="project-symbol">03</span>
+            <span class="visual-label">USER EXPERIENCE</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">PROJECT IDEA</p>
+            <h3>Coffee Shop POS System</h3>
+            <img src="static\images\coffe-shop.jpg" alt="">
+            <p>
+              A complete POS system for Kabanas Coffee shop in Mombasa. The can manage from inventoy,sales,employees,
+              track orders in real time
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>API</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+  <footer id="site-footer"></footer>
+
+  <script src="static/js/site.js" defer></script>
 </body>
+
 </html>
