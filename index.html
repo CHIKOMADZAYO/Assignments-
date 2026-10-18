@@ -10,7 +10,22 @@
 </head>
 
 <body>
-  <header id="site-header"></header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img class="logo-img" src="static/images/web.png" alt="logo">
+        <h2>WILLIAM's Website</h2>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</label>
+      <ul class="navlinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects .html">Projects</a></li>
+        <li><a class="nav-contact" href="contact.html">Let's Talk</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section class="hero" id="home">
       <div class="hero-content">
@@ -67,7 +82,7 @@
 
       <div class="about-content">
         <div class="about-img">
-            <img src="" alt="">
+            <img src="static\images\m.png" alt="">
         </div>
         <div>
           <h3>My journey into software development</h3>
@@ -194,9 +209,19 @@
     </section>
 
   </main>
-  <footer id="site-footer"></footer>
-
-  <script src="static/js/site.js" defer></script>
+  <footer>
+    <nav class="navbar footer-navbar">
+      <div class="logo">
+        <h2>PlatformWebsite</h2>
+      </div>
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects .html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>

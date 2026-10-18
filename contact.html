@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="static/css/style .css">
+  <link rel="shortcut icon" href="static\images\web.png" type="image/x-icon">
+
 </head>
 <body>
-    <header id="site-header"></header>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img class="logo-img" src="static/images/web.png" alt="logo">
+          <h2>WILLIAM's Website</h2>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</label>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects .html">Projects</a></li>
+          <li><a class="nav-contact active" href="contact.html">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
     <div class="container">
         <div class="title">
@@ -49,7 +66,18 @@
 
    </div>
     </main>
-    <footer id="site-footer"></footer>
-    <script src="static/js/site.js" defer></script>
+    <footer>
+      <nav class="navbar footer-navbar">
+        <div class="logo">
+          <h2>PlatformWebsite</h2>
+        </div>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects .html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
 </body>
 </html>
